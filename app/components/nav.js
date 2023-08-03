@@ -40,7 +40,7 @@ export function Navbar() {
   return (
     <nav
       ref={scope}
-      className="absolute z-50 grid grid-cols-1 h-full w-full justify-items-end grid-rows-1 right-0 top-0"
+      className="absolute z-50 grid grid-cols-1 h-max w-max justify-items-end grid-rows-1 right-0 top-0"
     >
       <motion.div
         initial={{ x: "100%", y: "-100%" }}
@@ -57,7 +57,7 @@ export function Navbar() {
         className="h-[75%] sm:h-[calc(50vh/1.2)] col-start-1 col-end-1 row-start-1 row-end-1 w-full sm:w-[calc(50vh/1.2)] flex  items-end px-6 py-6 bg-red-400 border-l-2 border-b-2 border-slate-300 text-white font-normal text-3xl"
       >
         <motion.div id="navLinks">
-          <Link href="/">work</Link>
+          <Link href="/servicos">services</Link>
         </motion.div>
       </motion.div>
       <motion.div
