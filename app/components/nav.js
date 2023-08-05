@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import { motion, useCycle, useAnimate, stagger } from "framer-motion";
-import zIndex from "@mui/material/styles/zIndex";
 
 //framer-motion nav background stagger
 const staggerNavTabs = stagger(0.3, { startDelay: 0.15 });
