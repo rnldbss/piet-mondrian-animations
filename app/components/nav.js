@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import { motion, useCycle, useAnimate, stagger } from "framer-motion";
+import zIndex from "@mui/material/styles/zIndex";
 
 //framer-motion nav background stagger
 const staggerNavTabs = stagger(0.3, { startDelay: 0.15 });
@@ -39,10 +40,9 @@ export function Navbar() {
 
   return (
     <motion.nav
-      initial={{ width: 0, height: 0 }}
-      animate={navOpen ? "" : ""}
+      animate={navOpen ? { zIndex: 50 } : { zIndex: 10 }}
       ref={scope}
-      className="absolute z-50 grid grid-cols-1 justify-items-end grid-rows-1 right-0 top-0"
+      className="absolute grid grid-cols-1 justify-items-end grid-rows-1 right-0 top-0 w-full h-full"
     >
       <motion.div
         initial={{ x: "100%", y: "-100%" }}
