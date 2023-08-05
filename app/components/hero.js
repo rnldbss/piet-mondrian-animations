@@ -64,7 +64,7 @@ export function Hero() {
   }, []); //empty array so it doesn't re-run every render.
 
   return (
-    <div ref={heroRef} className="flex relative z-20 flex-col gap-6 w-full">
+    <div ref={heroRef} className="flex relative z-10 flex-col gap-6 w-full">
       <div className="flex gap-2 ">
         <div className="text-4xl md:text-4xl xl:text-5xl md:ml-3 mt-auto mb-auto">
           <h1 id="text" className="inline"></h1>

@@ -39,9 +39,9 @@ export function Navbar() {
 
   return (
     <motion.nav
-      animate={navOpen ? { zIndex: 50 } : { zIndex: 10 }}
+      animate={navOpen ? { zIndex: 50 } : { zIndex: 20 }}
       ref={scope}
-      className="absolute grid grid-cols-1 justify-items-end grid-rows-1 right-0 top-0 w-full h-full"
+      className="absolute grid grid-cols-1 justify-items-end grid-rows-1 right-0 top-0 w-full h-full sm:w-max sm:h-max"
     >
       <motion.div
         initial={{ x: "100%", y: "-100%" }}
