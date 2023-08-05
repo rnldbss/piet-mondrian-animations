@@ -2,6 +2,7 @@ import "./globals.css";
 import { Montserrat } from "next/font/google";
 import { Navbar } from "./components/nav";
 import { Social } from "./components/social";
+import Link from "next/link";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -19,9 +20,9 @@ export default function RootLayout({ children }) {
             className="p-3 sm:p-5 md:p-8 lg:p-10 absolute top-0 left-0 w-screen 
           h-screen"
           >
-            <div className=" border-2 relative h-full w-full border-slate-300 overflow-hidden bg-slate-100">
+            <div className=" border-2 relative h-full w-full border-slate-400 overflow-hidden bg-slate-100">
               <div className="absolute top-3 left-3 text-2xl text-slate-600">
-                <span>brand</span>
+                <Link href="/"> brand</Link>
               </div>
               <Navbar />
               {children}

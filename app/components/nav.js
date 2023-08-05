@@ -40,41 +40,41 @@ export function Navbar() {
   return (
     <nav
       ref={scope}
-      className="absolute z-50 grid grid-cols-1 h-max w-max justify-items-end grid-rows-1 right-0 top-0"
+      className="absolute z-50 grid grid-cols-1 justify-items-end grid-rows-1 right-0 top-0"
     >
       <motion.div
         initial={{ x: "100%", y: "-100%" }}
         id="navTabs"
-        className="h-[100%] sm:h-[50vh] w-full sm:w-[50vh] col-start-1 col-end-1 row-start-1 row-end-1 bg-orange-400 flex  items-end px-6 py-6 text-white font-normal border-l-2 border-b-2 border-slate-300 text-3xl"
+        className="h-[100%] sm:h-[50vh] w-full sm:w-[50vh] col-start-1 col-end-1 row-start-1 row-end-1 bg-orange-400 flex  items-end sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-3 lg:py-3 text-white font-normal border-l-2 border-b-2 border-slate-300 text-3xl"
       >
-        <motion.div id="navLinks">
+        <motion.div id="navLinks" onClick={() => cycleNavOpen(false)}>
           <Link href="/">contact</Link>
         </motion.div>
       </motion.div>
       <motion.div
         initial={{ x: "100%", y: "-100%" }}
         id="navTabs"
-        className="h-[75%] sm:h-[calc(50vh/1.2)] col-start-1 col-end-1 row-start-1 row-end-1 w-full sm:w-[calc(50vh/1.2)] flex  items-end px-6 py-6 bg-red-400 border-l-2 border-b-2 border-slate-300 text-white font-normal text-3xl"
+        className="h-[75%] sm:h-[calc(50vh/1.2)] col-start-1 col-end-1 row-start-1 row-end-1 w-full sm:w-[calc(50vh/1.2)] flex  items-end sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-3 lg:py-3 bg-red-400 border-l-2 border-b-2 border-slate-300 text-white font-normal text-3xl"
       >
-        <motion.div id="navLinks">
+        <motion.div id="navLinks" onClick={() => cycleNavOpen(false)}>
           <Link href="/servicos">services</Link>
         </motion.div>
       </motion.div>
       <motion.div
         initial={{ x: "100%", y: "-100%" }}
         id="navTabs"
-        className="h-[50%] sm:h-[calc(50vh/1.5)] col-start-1 col-end-1 row-start-1 row-end-1 bg-purple-400 w-full sm:w-[calc(50vh/1.5)] flex  items-end px-6 py-6 border-l-2 border-b-2 border-slate-300 text-white font-normal text-3xl"
+        className="h-[50%] sm:h-[calc(50vh/1.5)] col-start-1 col-end-1 row-start-1 row-end-1 bg-purple-400 w-full sm:w-[calc(50vh/1.5)] flex  items-end sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-3 lg:py-3 border-l-2 border-b-2 border-slate-300 text-white font-normal text-3xl"
       >
-        <motion.div id="navLinks">
+        <motion.div id="navLinks" onClick={() => cycleNavOpen(false)}>
           <Link href="/">about</Link>
         </motion.div>
       </motion.div>
       <motion.div
         initial={{ x: "100%", y: "-100%" }}
         id="navTabs"
-        className="h-[25%] sm:h-[calc(50vh/2)] col-start-1 col-end-1 row-start-1 row-end-1 bg-sky-400 w-full sm:w-[calc(50vh/2)] flex  items-end px-6 py-6 text-white border-l-2 border-b-2 border-slate-300 font-normal text-3xl"
+        className="h-[25%] sm:h-[calc(50vh/2)] col-start-1 col-end-1 row-start-1 row-end-1 bg-sky-400 w-full sm:w-[calc(50vh/2)] flex  items-end sm:px-1 sm:py-1 md:px-2 md:py-2 lg:px-3 lg:py-3 text-white border-l-2 border-b-2 border-slate-300 font-normal text-3xl"
       >
-        <motion.div id="navLinks">
+        <motion.div id="navLinks" onClick={() => cycleNavOpen(false)}>
           <Link href="/">home</Link>
         </motion.div>
       </motion.div>
