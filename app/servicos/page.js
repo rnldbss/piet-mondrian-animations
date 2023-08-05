@@ -46,13 +46,13 @@ export default function Services() {
 
   return (
     <div className="flex justify-center items-center h-full w-full  px-3">
-      <div className="flex flex-col gap-6 sm:gap-11 max-w-[600px]">
-        <ul className="flex sm:text-lg justify-evenly">
+      <div className="flex flex-col gap-7 sm:gap-11 max-w-[600px]">
+        <ul className="flex sm:text-lg justify-around">
           {tabs.map((tab) => (
             <motion.li
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className="cursor-pointer px-2 sm:w-32 w-20 text-center relative z-40 h-8"
+              className="cursor-pointer px-2 sm:w-32 w-24 text-center relative z-40 h-8"
             >
               <span className="absolute border-2 border-slate-400 z-30 top-0 left-0 w-full h-full bg-slate-50">
                 {tab.label}

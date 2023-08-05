@@ -38,7 +38,9 @@ export function Navbar() {
   const scope = useNavAnimation(navOpen);
 
   return (
-    <nav
+    <motion.nav
+      initial={{ width: 0, height: 0 }}
+      animate={navOpen ? "" : ""}
       ref={scope}
       className="absolute z-50 grid grid-cols-1 justify-items-end grid-rows-1 right-0 top-0"
     >
@@ -99,6 +101,6 @@ export function Navbar() {
           className="w-14 h-0.5 bg-slate-600"
         ></motion.span>
       </motion.div>
-    </nav>
+    </motion.nav>
   );
 }
